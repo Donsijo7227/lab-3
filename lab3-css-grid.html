@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 3 | CSS Grid</title>
+		<meta name="description" content="A CSS Grid challenge to test your new layout skills">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			/* Put styles for CSS Grid here for the Lab */ 
+			.container {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+				gap: 2px;
+				grid-template-areas:
+					"branding ad1 ad1 ad1 search"
+					"branding global-nav global-nav global-nav global-nav"
+					"local-nav top-story top-story top-story ad2"
+					"local-nav global-news national-news local-news ad2"
+					"local-nav global-news national-news local-news market-info"
+					"footer footer footer footer footer";
+				height: 100vh;
+				}
+
+				.item-a { grid-area: branding; background-color: #f8d7da; }
+				.item-b { grid-area: global-nav; background-color: #ffe5d0; }
+				.item-c { grid-area: local-nav; background-color: #e9ecef; }
+				.item-d { grid-area: footer; background-color: #fff3cd; }
+				.item-e { grid-area: top-story; background-color: #d4edda; }
+				.item-f { grid-area: global-news; background-color: #e0cffc; }
+				.item-g { grid-area: national-news; background-color: #ffeeba; }
+				.item-h { grid-area: local-news; background-color: #b8e7ff; }
+				.item-i { grid-area: search; background-color: #cce5ff; }
+				.item-j{grid-area: market-info; background-color: #72630b;}
+				.item-k { grid-area: ad1; background-color: #c3e6cb; }
+				.item-l { grid-area: ad2; background-color: #c3e6cb; }
+
+				.item {
+				padding: 10px;
+				font-family: Arial, sans-serif;
+				color: #333;
+				}
+
+				.item h2 {
+				margin: 0;
+				font-size: 16px;
+				}
+
+				body {
+				margin: 0;
+				padding: 0;
+				}
+  
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item item-a">
+				<h2>Branding</h2>
+			</div>
+			<div class="item item-b">
+				<h2>Global Nav</h2>
+			</div>
+			<div class="item item-c">
+				<h2>Local Nav</h2>
+			</div>
+			<div class="item item-d">
+				<h2>Footer</h2>
+			</div>
+			<div class="item item-e">
+				<h2>Top Story</h2>
+			</div>
+			<div class="item item-f">
+				<h2>Global News</h2>
+			</div>
+			<div class="item item-g">
+				<h2>National News</h2>
+			</div>
+			<div class="item item-h">
+				<h2>Local News</h2>
+			</div>
+			<div class="item item-i">
+				<h2>Search</h2>
+			</div>
+			<div class="item item-j">
+				<h2>Market Info</h2>
+			</div>
+			<div class="item item-k">
+				<h2>Advertising 1</h2>
+			</div>
+			<div class="item item-l">
+				<h2>Advertising 2</h2>
+			</div>
+		</div><!-- .container -->
+	</body>
+</html>
